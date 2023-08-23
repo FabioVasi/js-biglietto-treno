@@ -44,12 +44,15 @@ const over65 = 65
 
 let prezzoDiViaggio = chilometri * 0.21;
 
-console.log(prezzoDiViaggio);
+
 
 // stampare il messaggio con il prezzo in console includendo anche due cifre decimali
 
-
+console.log(prezzoDiViaggio);
 
 // stampare il messaggio con il prezzo in pagina includendo anche due cifre decimali
 
+const speseElement = document.getElementById('spese');
+console.log(speseElement);
 
+speseElement.innerHTML = 'Ciao il costo sarà pari a : ' + prezzoDiViaggio + ' €';
