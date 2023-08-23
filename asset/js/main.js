@@ -55,13 +55,15 @@ if(età < 18){
     prezzoDiViaggio = chilometri * sconto_2;
 }
 
+
+
 // stampare il messaggio con il prezzo in console includendo anche due cifre decimali
 
-console.log(prezzoDiViaggio);
+console.log(prezzoDiViaggio.toFixed(2));
 
 // stampare il messaggio con il prezzo in pagina includendo anche due cifre decimali
 
 const speseElement = document.getElementById('spese');
 console.log(speseElement);
 
-speseElement.innerHTML = 'Ciao, il costo sarà pari a : ' + prezzoDiViaggio + ' €';
+speseElement.innerHTML = 'Ciao, il costo sarà pari a : ' + prezzoDiViaggio.toFixed(2) + ' €';
