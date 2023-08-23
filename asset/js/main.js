@@ -42,12 +42,17 @@ let over65 = 65
 
 // calcolare il prezzo del viaggio
 
+const costo = 0.21;
+
 let prezzoDiViaggio = chilometri * 0.21;
 
+const sconto_1 = costo - 0.042;
+const sconto_2 = costo - 0.084;
+
 if(età < 18){
-    chilometri * 0.168;
+    prezzoDiViaggio = chilometri * sconto_1;
 } else if(età > 65){
-    chilometri * 0.126;
+    prezzoDiViaggio = chilometri * sconto_2;
 }
 
 // stampare il messaggio con il prezzo in console includendo anche due cifre decimali
