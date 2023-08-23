@@ -32,11 +32,19 @@ const età = Number(prompt('Quanti anni hai?'));
 
 console.log(chilometri, età);
 
-// calcolare il prezzo del viaggio
 // applicare il 20% di sconto per i minorenni
+
+const minorenne = 18
+
 // applicare il 40% di sconto per gli over 65
 
-const prezzoAlChilometro = Number(prompt('0.21 € al chilometro'));
+const over65 = 65
+
+// calcolare il prezzo del viaggio
+
+let prezzoDiViaggio = chilometri * 0.21;
+
+console.log(prezzoDiViaggio);
 
 // stampare il messaggio con il prezzo in console includendo anche due cifre decimali
 
