@@ -34,28 +34,17 @@ console.log(chilometri, età);
 
 // applicare il 20% di sconto per i minorenni
 
-let minorenne = 18
-
 // applicare il 40% di sconto per gli over 65
-
-let over65 = 65
 
 // calcolare il prezzo del viaggio
 
-const costo = 0.21;
-
 let prezzoDiViaggio = chilometri * 0.21;
 
-const sconto_1 = costo - 0.042;
-const sconto_2 = costo - 0.084;
-
 if(età < 18){
-    prezzoDiViaggio = chilometri * sconto_1;
+    prezzoDiViaggio = prezzoDiViaggio - (prezzoDiViaggio * 0.2);
 } else if(età > 65){
-    prezzoDiViaggio = chilometri * sconto_2;
+    prezzoDiViaggio = prezzoDiViaggio - (prezzoDiViaggio * 0.4);
 }
-
-
 
 // stampare il messaggio con il prezzo in console includendo anche due cifre decimali
 
